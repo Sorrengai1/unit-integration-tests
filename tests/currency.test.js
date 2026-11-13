@@ -1,6 +1,6 @@
 const { parseCurrency, formatCurrency, addCurrencies } = require('../src/currency');
 test('Перетворення валюти у число', () => {
-expect(parseCurrency('$50')).toBe(50);
+expect(parseCurrency('$50')).toBe(100); // <-- Навмисна помилка
 expect(parseCurrency('$30.25')).toBe(30.25);
 });
 test('Форматування числа у валюту', () => {
